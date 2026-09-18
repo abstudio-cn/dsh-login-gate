@@ -199,3 +199,5 @@ WebSocket 升级请求（`Upgrade`）走同样的改写，并保留路径与查�
 | `dsh-login-gate.cjs` | 门禁本体（单文件、零依赖） |
 | `dsh-login-gate.config.json` | 凭据记录（盐 + scrypt 哈希），首次注册成功时生成 |
 | `basic-auth-route-demo.js` | 相关但独立：早前验证「Cordis 动态插件能否做 HTTP Basic 认证」的示例代码。结论是动态插件只能保护自己注册的路由，无法拦截整个 GUI，故改用本门禁方案 |
+
+##我真的很推荐deepseek harness直接将登录模式直接封装进内部，并且最好做端口分离，防止危险调用的情况发生。
